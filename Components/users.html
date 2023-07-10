@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Intern Chat</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="users.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Intern Chat</h1>
+            <nav>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="Home.html">Home</a></li>
+                    <li>
+                        <select id="userDisplay"></select>
+                    </li>
+                    <li>
+                        <img src="" alt="" id="userImage">
+                    </li>
+                    <li>
+                        <button id="logout" class="btn-primary" onclick="logoutUser()">Logout</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="input-container">
+                <input type="search" id="usersSearch" oninput="searchFun()" placeholder="Search users here">
+            </div>
+            
+            <div id="users-container">
+                <h1>List of Users</h1>
+                <div id="users">
+                    <!-- User cards will be dynamically added here -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </section>
+    
+    <script src="users.js" async defer></script>
+</body>
+</html>

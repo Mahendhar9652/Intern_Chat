@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Home.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <h1>Intern chat</h1>
+      <nav>
+        <ul>
+          <li class="nav-right"><a href="profile.html">Profile</a></li>
+          <li class="nav-right"><a href="users.html">users</a></li>
+          <li class="nav-right"><select id="userDisplay"></select></li>
+          <li class="nav-right"><img src="" alt="" srcset="" id="userImage"></li>
+          <li class="nav-right"><button id="logout" class="btn-primary" onclick="logoutUserr()">Logout</button></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="feed-container">
+        <div class="feed-group">
+            <h1 class="feed-heading">Your Feed</h1>
+            <div class="feeds" id="feeds-container"></div>
+          </div>    
+      <div class="tweet-icon">
+        <div class="icons-groups">
+          <i class="fa-solid fa-message" style="color: #dc4018;" id="msgIcon" onclick="navigateRecentChats()"></i>
+          <i class="fas fa-comment" onclick="showTweetPop()" id="postIcon"></i>  
+        </div>
+        <div class="comment-box">
+          <div class="comments-display">
+
+          </div>
+          <div class="comments-input">
+            <input type="text" class="caption-input form-control commentText" placeholder="Comment">
+            <input type="submit" value="comment" class="upload-button btn btn-primary" onclick="commentsUpload()">  
+          </div>
+          </div>
+      </div>
+      <div class="upload-container card" id="upload-co">
+        <div class="card-body">
+          <input type="text" class="caption-input form-control" id="caption" placeholder="Caption">
+          <input type="file" class="file-input form-control" accept="image/*, video/*">
+          <input type="submit" value="Upload" class="upload-button btn btn-primary" onclick="upload()">
+        </div>
+      </div>
+       </div>
+    <!-- <footer>
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer> -->
+
+    <script src="Home.js"></script>
+  </body>
+</html>

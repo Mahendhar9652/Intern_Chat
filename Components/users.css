@@ -1,0 +1,184 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+#userImage{
+  width: 4vw;
+  height: 4vh;
+  border-radius: 50%;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #69b9d4;
+  width: 100%;
+  height: 10vh;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav ul li {
+  margin-left: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+input[type="search"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#users-container {
+  margin-bottom: 20px;
+  overflow: auto; }
+
+
+#users {
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+
+  max-height: 400px; 
+  overflow-y: auto; 
+}
+
+#userImage{
+  width: 4vw;
+  height: 4vh;
+  border-radius: 50%;
+}
+#users h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 18rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.profile-img{
+  width: 14vw;
+  height: 14vh;
+  border-radius: 50%;
+}
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #69b9d4;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  }
+
+footer .footer-icons {
+  margin-bottom: 10px;
+}
+
+footer .footer-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+}
+
+/* Example styles for Font Awesome icons */
+.fab {
+  font-size: 24px;
+}
+
+.fab.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.fab.fa-facebook:hover {
+  color: #1877F2;
+}
+
+.fab.fa-instagram:hover {
+  color: #C13584;
+}
+
+.fab.fa-linkedin:hover {
+  color: #2867B2;
+}
+

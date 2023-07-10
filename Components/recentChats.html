@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Recent Chats</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="recentChats.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    </head>
+    <body>
+    <section>
+        <header>
+            <h1>Intern chat</h1>
+            <nav>
+              <ul>
+                <li class="nav-right"><a href="profile.html">Profile</a></li>
+                <li class="nav-right"><a href="users.html">users</a></li>
+                <li class="nav-right"><select id="userDisplay"></select></li>
+                <li class="nav-right"><img src="" alt="" srcset="" id="userImage"></li>
+                <li class="nav-right"><button id="logout" class="btn-primary" onclick="logout()">Logout</button></li>
+              </ul>
+            </nav>
+          </header>
+          <main class="recent-container">
+            <div class="recent-cards" id="display">
+               
+
+            </div>
+          </main>
+             <footer>
+      <div class="footer-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </footer>
+    </section>
+        
+        <script src="recentChats.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Message</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="message.css">
+</head>
+<body>
+  <header>
+    <h1>Intern chat</h1>
+    <nav>
+      <ul>
+        <li class="nav-right"><a href="Home.html">Home</a></li>
+        <li class="nav-right"><a href="users.html">Users</a></li>
+        <li class="nav-right"><a href="profile.html">Profile</a></li>
+        <li class="nav-right">
+          <select id="userDisplay"></select>
+        </li>
+        <li class="nav-right"><img src="" alt="" srcset="" id="userImage"></li>
+        <li class="nav-right">
+          <button id="logout" class="btn-primary logout-btn" onclick="logoutUsers()">Logout</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="message-area">
+    <div id="user"></div>
+    <div id="msgs">
+      <div class="left-msgs"></div>
+      <div class="right-msgs"></div>
+    </div>
+    <div id="input-area">
+      <input type="text" id="message-input" placeholder="Enter your message">
+      <button id="send-button" onclick="send()">Send</button>
+    </div>
+  </div>
+  <script src="message.js" async defer></script>
+</body>
+</html>
