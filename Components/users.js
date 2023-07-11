@@ -40,7 +40,7 @@ function searchFun() {
     }
 }
 logOut.addEventListener("click", () => {
-    let indexs = allLoginUserListss.findIndex((user, index) => user.username == loginUser[0].username);
+    let indexs = allLoginUserListss.findIndex((user, index) => user.username == currentLoginUser[0].username);
     allLoginUserListss.splice(indexs, 1);
     localStorage.setItem("loginUser", JSON.stringify(allLoginUserListss));
     sessionStorage.clear();
@@ -51,3 +51,10 @@ function messageNavigatePage(username) {
 }
 // Initial rendering of all users
 renderUsers(exceptLoginUser);
+function logoutUserPage() {
+    let indexs = allLoginUserLists.findIndex((user, index) => user.username == loginUserr[0].username);
+    allLoginUserLists.splice(indexs, 1);
+    localStorage.setItem("loginUser", JSON.stringify(allLoginUserLists));
+    sessionStorage.clear();
+    window.location.href = "../index.html";
+}

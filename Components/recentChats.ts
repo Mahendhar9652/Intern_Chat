@@ -28,7 +28,7 @@ const allLoginUsersLists: Login[] = JSON.parse(localStorage.getItem("loginUser")
 
 
 function logout() {
-  let indexs = allLoginUsersLists.findIndex((user, index) => user.username == loginUser[0].username);
+  let indexs = allLoginUsersLists.findIndex((user, index) => user.username == loginUsers[0].username);
   allLoginUsersLists.splice(indexs, 1);
   localStorage.setItem("loginUser", JSON.stringify(allLoginUsersLists));
   sessionStorage.clear();

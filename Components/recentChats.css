@@ -44,7 +44,11 @@
     color: #fff;
     text-decoration: none;
   }
-
+#userImage{
+  width: 4vw;
+  height: 6vh;
+  border-radius: 50%;
+}
   footer {
     background-color: #69b9d4;
     color: #fff;

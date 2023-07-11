@@ -84,7 +84,7 @@ function msgsRendering() {
     });
 }
 function logoutUsers() {
-    let indexs = allLoginUserList.findIndex((user, index) => user.username == loginUser[0].username);
+    let indexs = allLoginUserList.findIndex((user, index) => user.username == loginUserData[0].username);
     allLoginUserList.splice(indexs, 1);
     localStorage.setItem("loginUser", JSON.stringify(allLoginUserList));
     sessionStorage.clear();

@@ -38,7 +38,7 @@ filteredUserss.forEach(user => {
   `;
 });
 function logoutUser() {
-    let indexs = allLoginUserLists.findIndex((user, index) => user.username == loginUser[0].username);
+    let indexs = allLoginUserLists.findIndex((user, index) => user.username == loginUserr[0].username);
     allLoginUserLists.splice(indexs, 1);
     localStorage.setItem("loginUser", JSON.stringify(allLoginUserLists));
     sessionStorage.clear();
